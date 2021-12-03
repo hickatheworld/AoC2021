@@ -1,5 +1,4 @@
-f = open('input.txt')
-
+f = open('ressources/depths.txt')
 count = 0
 line = f.readline()
 last = int(line)
