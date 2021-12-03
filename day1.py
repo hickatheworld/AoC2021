@@ -25,7 +25,3 @@ for i in range(0, len(depths)-3):
 	if next > current:
 		count+=1
 print(count)
-
-
-
-
