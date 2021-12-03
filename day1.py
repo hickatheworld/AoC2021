@@ -10,11 +10,20 @@ f.close()
 
 # Part 1
 count = 0
-last = depths[0]
-for i in range(1, len(depths)):
-	if depths[i] > last:
+for i in range(len(depths)-1):
+	current = depths[i]
+	next = depths[i+1]
+	if next > current:
 		count+=1
-	last = depths[i]
+print(count)
+
+# Part 2
+count = 0
+for i in range(0, len(depths)-3):
+	current = depths[i] + depths[i+1] + depths[i+2]	
+	next = depths[i+1] + depths[i+2] + depths[i+3]
+	if next > current:
+		count+=1
 print(count)
 
 
