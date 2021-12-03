@@ -1,13 +1,22 @@
+# Loading data
 f = open('ressources/depths.txt')
-count = 0
+
+depths = []
 line = f.readline()
-last = int(line)
 while line:
+	depths.append(int(line))
 	line = f.readline()
-	if len(line) > 0:
-		depth = int(line)
-		if depth > last:
-			count+=1
-		last = depth
 f.close()
+
+# Part 1
+count = 0
+last = depths[0]
+for i in range(1, len(depths)):
+	if depths[i] > last:
+		count+=1
+	last = depths[i]
 print(count)
+
+
+
+
