@@ -1,9 +1,5 @@
 # Loading data
-from os import system
-
-
 f = open('ressources/day6.txt')
-
 content = f.readline()
 fishes = [int(i) for i in content.split(',')]
 
