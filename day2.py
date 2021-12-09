@@ -1,5 +1,5 @@
 # Loading data
-f = open('ressources/commands.txt')
+f = open('ressources/day2.txt')
 
 commands = []
 line = f.readline()

@@ -39,7 +39,7 @@ class VentLine:
 		return points
 
 # Loading data
-f = open('ressources/vents.txt')
+f = open('ressources/day5.txt')
 
 lines =[]
 line = f.readline()

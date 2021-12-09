@@ -1,5 +1,5 @@
 # Loading data
-f = open('ressources/diagnostic.txt')
+f = open('ressources/day3.txt')
 
 numbers = []
 line = f.readline()

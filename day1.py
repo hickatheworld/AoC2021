@@ -1,5 +1,5 @@
 # Loading data
-f = open('ressources/depths.txt')
+f = open('ressources/day1.txt')
 
 depths = []
 line = f.readline()

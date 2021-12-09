@@ -19,7 +19,7 @@ class VentLine:
 		return self.ends[0][0] != self.ends[1][0] and self.ends[0][1] != self.ends[1][1]
 
 # Loading data
-f = open('ressources/vents.txt')
+f = open('ressources/day5.txt')
 
 lines =[]
 line = f.readline()
